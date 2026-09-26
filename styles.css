@@ -9,6 +9,7 @@
   color-scheme: light only; /* sin modo oscuro (AGENT_INSTRUCTIONS §4c) */
   /* color */
   --c-paper:#ffffff;
+  --c-bg:#e1e1e1;
   --c-ink:#0b0b0b;
   --c-ink-soft:#4a4743;
   --c-cream:#f3ecdf;
@@ -47,7 +48,7 @@
 
 *,*::before,*::after{box-sizing:border-box}
 html,body{margin:0;overflow-x:clip}
-body{background:var(--c-paper);color:var(--c-ink);font:400 var(--fs-s)/1.4 var(--f-sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{background:var(--c-bg);color:var(--c-ink);font:400 var(--fs-s)/1.4 var(--f-sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--c-ink-soft)}
 button,input{font:inherit;color:inherit}
@@ -67,7 +68,7 @@ img{display:block;max-width:100%}
   position:relative;display:grid;
   grid-template-columns:auto minmax(0,1fr);
   grid-template-areas:"hero hero" "cap cap" "tag tag" "head sec" "soc soc" "card card" "bar bar" "tick tick";
-  column-gap:var(--sp-3);padding:0 var(--pad);background:var(--c-paper);
+  column-gap:var(--sp-3);padding:0 var(--pad);background:var(--c-bg);
 }
 .crop{position:absolute;width:18px;height:18px;z-index:6;pointer-events:none}
 .crop::before,.crop::after{content:"";position:absolute;background:var(--c-ink)}
