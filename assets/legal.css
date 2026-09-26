@@ -38,3 +38,8 @@ p, li { overflow-wrap: anywhere; }
 }
 .lg-foot a { text-decoration: none; }
 .lg-foot a:hover { text-decoration: underline; }
+
+/* Página única "Legal": cada bloque (aviso legal / privacidad) es un h2; sus apartados, h3. */
+h2.lg-sec { font-family: "Bodoni FLF", Georgia, serif; font-weight: 400; font-size: clamp(24px, 4.5vw, 30px); line-height: 1.2; margin: 48px 0 4px; scroll-margin-top: 16px; }
+h3 { font-size: 17px; font-weight: 500; margin: 28px 0 8px; }
+.lg-meta a { text-decoration: underline; }
