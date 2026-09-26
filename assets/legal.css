@@ -1,0 +1,40 @@
+/* Páginas legales de la landing coming soon. Estilo sobrio y legible; se alinea con los tokens
+   del diseño de Claude Design al implementar la portada. Sin modo oscuro (AGENT_INSTRUCTIONS §4c). */
+@font-face { font-family: "Bodoni FLF"; src: url("../fonts/BodoniFLF-Roman.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "DM Sans"; src: url("../fonts/DMSans-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "DM Sans"; src: url("../fonts/DMSans-Medium.ttf") format("truetype"); font-weight: 500; font-display: swap; }
+
+:root { color-scheme: light only; --negro: #0F0F0F; --gris: #3C4048; --linea: #E4E1DA; }
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: #FFFFFF; color: var(--negro);
+  font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-underline-offset: 3px; }
+
+.lg-top {
+  display: flex; justify-content: space-between; align-items: center;
+  max-width: 760px; margin: 0 auto; padding: 24px 20px;
+  border-bottom: 1px solid var(--linea);
+}
+.lg-home img { display: block; width: 140px; height: auto; }
+.lg-lang { font-size: 13px; letter-spacing: .1em; }
+.lg-lang a { text-decoration: none; padding: 12px 4px; }
+
+.lg-main { max-width: 760px; margin: 0 auto; padding: 8px 20px 48px; }
+.lg-main article + article { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--linea); }
+h1 { font-family: "Bodoni FLF", Georgia, serif; font-weight: 400; font-size: clamp(32px, 6vw, 44px); line-height: 1.1; margin: 32px 0 8px; }
+h2 { font-size: 17px; font-weight: 500; margin: 32px 0 8px; }
+.lg-meta { color: var(--gris); margin: 0 0 8px; }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+p, li { overflow-wrap: anywhere; }
+
+.lg-foot {
+  max-width: 760px; margin: 0 auto; padding: 24px 20px 32px;
+  border-top: 1px solid var(--linea); font-size: 13px; color: var(--gris);
+}
+.lg-foot a { text-decoration: none; }
+.lg-foot a:hover { text-decoration: underline; }
