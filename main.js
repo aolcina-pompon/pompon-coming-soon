@@ -15,7 +15,7 @@
       edition: 'Nº\u00a000\u00a0· PRIMERA\u00a0EDICIÓN',
       ticker: 'EN PREPARACIÓN · Nº 00 · PRÓXIMAMENTE · DISEÑO FUNCIONAL · HECHO EN ESPAÑA · @POMPON.BRAND',
       navSocial: 'Redes y contacto', navLegal: 'Legal', contact: 'Contacto', legalNotice: 'Aviso legal', privacy: 'Privacidad', legalLink: 'Legal',
-      title: 'PÖMPON — Nº 00 · En preparación'
+      title: 'PÖMPON - Bolsos de diseño funcional · Próximamente'
     },
     en: {
       issueA: 'ISSUE 00 ·', issueB: 'IN THE MAKING', langGroup: 'Language',
@@ -32,7 +32,7 @@
       edition: 'ISSUE\u00a000\u00a0· FIRST\u00a0EDITION',
       ticker: 'IN THE MAKING · ISSUE 00 · COMING SOON · FUNCTIONAL DESIGN · MADE IN SPAIN · @POMPON.BRAND',
       navSocial: 'Social and contact', navLegal: 'Legal', contact: 'Contact', legalNotice: 'Legal notice', privacy: 'Privacy', legalLink: 'Legal',
-      title: 'PÖMPON — Issue 00 · In the making'
+      title: 'PÖMPON - Functional designer bags · Coming soon'
     }
   };
   const $ = (s, r = document) => r.querySelector(s);
