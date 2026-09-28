@@ -40,7 +40,10 @@
   const q = new URLSearchParams(location.search);
   /* Sin almacenamiento en el dispositivo (ni cookies ni localStorage): la página se sirve sin banner de cookies. Spec §3. */
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
-  let lang = q.get('lang') || ((navigator.language || 'es').startsWith('es') ? 'es' : 'en');
+  /* Idioma: manda ?lang=; si no, el del navegador de la persona. Los rastreadores reciben siempre el ES del HTML:
+     Googlebot renderiza con navegador en inglés y, sin esta guarda, Google indexaba la versión EN. Spec §2. */
+  const BOT = /bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebookexternalhit|lighthouse|headless/i.test(navigator.userAgent);
+  let lang = q.get('lang') || (BOT || (navigator.language || 'es').startsWith('es') ? 'es' : 'en');
   if (!T[lang]) lang = 'es';
   const t = k => T[lang][k];
 
